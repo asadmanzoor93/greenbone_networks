@@ -64,6 +64,10 @@ Before you start, ensure you have the following:
    ```bash
    git clone https://github.com/asadmanzoor93/greenbone_networks.git
    cd greenbone_networks/hardware_tracking
+   
+   # adjust the settings for environment
+    cp deployment.template.py deployment.py
+    vim deployment.py
    ```
 
 2. Run the Docker container using Docker Compose:
