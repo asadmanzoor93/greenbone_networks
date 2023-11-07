@@ -1,0 +1,26 @@
+[flake8]
+
+# keep the default excludes (.git, __pycache__, etc.)
+extend_exclude =
+
+	# django migration files
+	migrations,
+
+	# the virtual env
+	./venv
+
+# list of glob:error pairs
+per_file_ignores =
+
+	# url path lines almost always exceed 79 chars
+	manage.py:E501
+
+	urls.py:E501
+
+	settings.py:E501
+
+# print the source code generating the error
+show_source = True
+
+# print some counts at the end
+statistics = True

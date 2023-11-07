@@ -1,0 +1,24 @@
+name: run flake8
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  run_flake8:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+
+      - uses: rbialon/flake8-annotations@v1
+
+      - name: Install and run flake8
+        run: |
+          pip install $(grep flake8 requirements.in)
+          flake8

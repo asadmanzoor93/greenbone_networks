@@ -1,0 +1,12 @@
+# virtual env
+/venv
+
+# settings local
+/hardware_tracking/deployment.py
+
+# python temps
+*.pyc
+.pytest_cache/
+
+# editor temps
+.idea/

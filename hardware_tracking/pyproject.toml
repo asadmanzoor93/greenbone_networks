@@ -1,0 +1,12 @@
+[tool.pytest.ini_options]
+# needed by pytest-django
+DJANGO_SETTINGS_MODULE = "hardware_tracking.settings"
+
+# mirrors what python manage.py test does
+addopts = "--reuse-db"
+
+# collect only from these files
+python_files = ["test_*.py"]
+
+# collect only unittest.TestCase subclasses
+python_classes = []
