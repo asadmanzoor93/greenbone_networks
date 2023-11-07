@@ -2,7 +2,7 @@
 /venv
 
 # settings local
-/hardware_tracking/deployment.py
+deployment.py
 
 # python temps
 *.pyc
